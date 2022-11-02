@@ -6,7 +6,7 @@ exports.createSchools =  (req, res) => {
       schoolName: req.body.schoolName,
       address: req.body.address,
     })
-      .save()
+      .save( )
       .then((school) => res.send(school))
       .catch((err) => res.send(err));
   };
